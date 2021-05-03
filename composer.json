@@ -2,9 +2,11 @@
     "name": "synchronized/lock",
     "description": "concurrency control by lock",
     "type": "library",
+    "keywords": ["synchronized", "lock", "redis", "zookeeper"],
+    "homepage": "https://github.com/ChennSun/synchronized",
     "authors": [
         {
-            "name": "chen",
+            "name": "chen sun",
             "email": "1735446621@qq.com"
         }
     ],
