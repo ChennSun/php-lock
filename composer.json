@@ -1,0 +1,15 @@
+{
+    "name": "synchronized/lock",
+    "description": "concurrency control by lock",
+    "type": "library",
+    "authors": [
+        {
+            "name": "chen",
+            "email": "1735446621@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    }
+}
