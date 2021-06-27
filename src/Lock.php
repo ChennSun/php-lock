@@ -8,7 +8,7 @@ abstract class Lock
         try {
             $result = $function();
         }catch (\Exception $e){
-
+            // todo
         } finally {
             $this->release();
         }
