@@ -1,6 +1,5 @@
 <?php
 
-namespace Synchronized\Lock;
 
 abstract class Lock
 {
