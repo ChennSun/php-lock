@@ -3,6 +3,11 @@
 
 abstract class Lock
 {
+    /**
+     * mutex
+     * @param callable $function
+     * @return mixed
+     */
     public function mutex(callable $function){
         $this->acquire();
         try {
@@ -15,7 +20,15 @@ abstract class Lock
         return $result;
     }
 
-    abstract protected function acquire();
+    /**
+     * generate lock unique value
+     * @return string
+     */
+    final protected function generateToken(): string {
+        return uniqid();
+    }
 
-    abstract protected function release();
+    abstract protected function acquire(): bool;
+
+    abstract protected function release(): bool;
 }
