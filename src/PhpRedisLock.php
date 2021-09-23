@@ -9,7 +9,7 @@ namespace Synchronized\Lock;
  * Class PhpRedisLock
  * php extension phpredis lock
  */
-class PhpRedisLock extends \RedisLock
+class PhpRedisLock extends RedisLock
 {
     /**
      * set lock

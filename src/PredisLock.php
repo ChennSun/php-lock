@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+namespace Synchronized\Lock;
+
 /**
  *  PredisLock for Predis libraries
  */

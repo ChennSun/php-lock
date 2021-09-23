@@ -1,7 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
-use Synchronized\Lock\Lock;
+namespace Synchronized\Lock;
 
 use Synchronized\Lock\Exception\AcquireLockTimeoutException;
 
