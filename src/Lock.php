@@ -16,7 +16,7 @@ abstract class Lock
         try {
             $result = $function();
         }catch (\Exception $e){
-            // todo
+            throw $e;
         } finally {
             $this->release();
         }
