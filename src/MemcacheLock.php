@@ -15,7 +15,7 @@ class MemcacheLock extends Lock
     const ACQUIRE_LOCK_LOOP_INTERVAL = 100;
 
     /**
-     * @var object
+     * @var \Memcache
      * php memcache client instance
      */
     protected $memcacheInstance;
@@ -45,12 +45,12 @@ class MemcacheLock extends Lock
     protected $token;
 
     /**
-     * @param object $memcacheInstance memcache client instance
+     * @param \Memcache $memcacheInstance memcache client instance
      * @param string $key memcache lock key
      * @param int $timeout (milliseconds) time of trying to acquire lock, default is 1000 milliseconds
      * @param int $expire (milliseconds) lock expire time, default is 2000 milliseconds
      */
-    public function __construct(\Memcached $memcacheInstance, string $key, int $timeout = 1000, int $expire = 2000)
+    public function __construct(\Memcache $memcacheInstance, string $key, int $timeout = 1000, int $expire = 2000)
     {
         $this->memcacheInstance = $memcacheInstance;
         $this->key = $key;
